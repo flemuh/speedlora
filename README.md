@@ -10,6 +10,8 @@
 
 Speedlora is an AI-powered research and discovery platform designed to accelerate how people explore, understand, connect, and transform knowledge into action.
 
+> **Project status:** Speedlora is currently in the concept and prototyping stage. Product interfaces, metrics, and visualizations shown in brand materials are illustrative and do not represent production functionality or verified product metrics.
+
 <p align="center">
   <img src="./brand/speedlora-hero.png" alt="Speedlora — Research at AI speed">
 </p>
