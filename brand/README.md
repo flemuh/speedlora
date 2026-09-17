@@ -2,9 +2,9 @@
 
 This directory contains the official public brand assets for Speedlora™.
 
-Speedlora is an independent AI-focused project building proprietary products for learning and personal intelligence, supported by an independent research program.
+Speedlora is an independent AI-focused project combining proprietary product development with technical research, experimentation, evaluation, and engineering.
 
-The visual identity is designed around the themes of:
+The visual identity is built around themes such as:
 
 - artificial intelligence
 - research
@@ -64,7 +64,7 @@ They should not be interpreted as verified product capabilities, operating scale
 
 The official Speedlora character concept.
 
-The character represents the human-centered side of the Speedlora identity and the themes of:
+The character represents the human-centered side of the Speedlora identity and themes such as:
 
 - research
 - artificial intelligence
@@ -80,11 +80,11 @@ The character may appear across Speedlora brand, product, and research materials
 
 ## Research identity
 
-The current research-oriented brand direction is based on the principle:
+The current research-oriented brand direction is based on:
 
 > **Research at AI speed.**
 
-Speedlora Research is intended to document and selectively publish technical work such as:
+Speedlora's research program is intended to document and selectively publish technical work such as:
 
 - Research Notes
 - Experiments
@@ -93,29 +93,21 @@ Speedlora Research is intended to document and selectively publish technical wor
 - Case Studies
 - Findings
 
-The research program is not intended to imply that Speedlora operates a large scientific database, global research platform, or commercial AI research service.
-
 The intended model is an independent research and engineering program where ideas can be studied, tested, measured, documented, and selectively published.
+
+It is not intended to imply that Speedlora operates a large scientific database, global research organization, universal paper-search platform, or commercial AI research service.
 
 A supporting principle used in the current visual direction is:
 
 > **Test. Measure. Learn. Publish.**
 
----
+Another part of the current research identity is:
 
-## Product family
+> **Independent research, openly published.**
 
-Speedlora is the umbrella identity for multiple initiatives.
+This refers to the selective publication of research results and technical findings.
 
-The currently planned ecosystem includes:
-
-- **Speedlora Life** — product/application
-- **Speedlora English** — product/application
-- **Speedlora Research** — research, experimentation, evaluation, and publication program
-
-Speedlora Life and Speedlora English are proprietary product initiatives.
-
-Speedlora Research supports the broader ecosystem by studying technical ideas, evaluating approaches, documenting experiments, and selectively publishing useful findings.
+It does not imply that production source code, internal datasets, proprietary infrastructure, or all research implementation is publicly available.
 
 ---
 
@@ -125,7 +117,7 @@ These files represent the current public version of the Speedlora visual identit
 
 Future versions may refine or expand the brand system while preserving the identity and historical record of previous releases.
 
-Earlier brand releases may contain exploratory concepts that no longer represent the current product or research direction.
+Earlier brand releases may contain exploratory concepts that no longer represent the current direction.
 
 Those releases remain preserved as part of the public brand history.
 
