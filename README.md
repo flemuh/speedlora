@@ -8,9 +8,11 @@
   <strong>Research at AI speed.</strong>
 </p>
 
-Speedlora is an AI-powered research and discovery platform designed to accelerate how people explore, understand, connect, and transform knowledge into action.
+Speedlora™ is an independent AI-focused project building proprietary products and conducting technical research in areas such as learning, personal intelligence, AI evaluation, experimentation, and engineering.
 
-> **Project status:** Speedlora is currently in the concept and prototyping stage. Product interfaces, metrics, and visualizations shown in brand materials are illustrative and do not represent production functionality or verified product metrics.
+Selected research outputs may be published publicly as Research Notes, Experiments, Benchmarks, Evaluations, Case Studies, and Findings.
+
+> **Project status:** Speedlora is currently in the concept, research, and prototyping stage. Visual interfaces and concepts shown in brand materials are illustrative and may not represent production functionality.
 
 <p align="center">
   <img src="./brand/speedlora-hero.png" alt="Speedlora — Research at AI speed">
@@ -22,19 +24,57 @@ Speedlora is an AI-powered research and discovery platform designed to accelerat
 
 The following domains are official Speedlora properties:
 
-- https://speedlora.app
 - https://speedlora.com
+- https://speedlora.app
 - https://speedlora.com.br
+
+**speedlora.com** is the primary public domain.
 
 ---
 
-## About Speedlora
+## Research
 
-Speedlora combines artificial intelligence, research, knowledge discovery, and intelligent exploration to help people move from questions to insights — faster.
+Speedlora maintains an independent research program focused on studying, testing, evaluating, benchmarking, and documenting technical ideas.
 
-The platform is being designed around the idea that AI should not only generate answers, but help users research, explore, compare, understand, connect information, identify patterns, and transform knowledge into action.
+Research areas may include:
 
-Speedlora is focused on creating faster and more intelligent workflows for research, discovery, learning, and knowledge-driven work.
+- AI and LLM evaluation
+- Agent evaluation
+- Experimental systems
+- Benchmarks
+- Engineering investigations
+- Research methodologies
+- Learning systems
+- Applied artificial intelligence
+
+Public research may be published as:
+
+- Research Notes
+- Experiments
+- Benchmarks
+- Evaluations
+- Case Studies
+- Findings
+
+The goal is to create a clear technical record of what was tested, how it was evaluated, what failed, what worked, and what was learned.
+
+Speedlora Research is not intended to represent a universal research database, paper-search engine, general-purpose chatbot, or large-scale commercial research platform.
+
+Selected public research will be published through:
+
+**https://speedlora.com/research**
+
+Internal implementation, production source code, private experiments, datasets, infrastructure, and proprietary technical details remain private unless intentionally released.
+
+---
+
+## Research philosophy
+
+> **Test. Measure. Learn. Publish.**
+
+Research should be grounded in experimentation, evidence, evaluation, and reproducible reasoning whenever possible.
+
+Public research is intended to communicate useful methodology, observations, and findings without making unsupported claims about scale, performance, or capability.
 
 ---
 
@@ -49,10 +89,29 @@ The Speedlora visual identity includes its:
 - slogans and taglines
 - interface concepts
 - illustrations
-- characters
+- character
 - associated brand assets
 
-Official brand materials are maintained in the [`/brand`](./brand) directory.
+Official public brand materials are maintained in the [`/brand`](./brand) directory.
+
+---
+
+## Public and private boundaries
+
+This repository is the official **public brand-history repository** for Speedlora™.
+
+It may contain:
+
+- official brand assets
+- public brand documentation
+- official domain references
+- trademark notices
+- public releases
+- intentionally public project information
+
+It is **not** the production source-code repository for Speedlora products.
+
+Production code, internal architecture, private research work, evaluation infrastructure, datasets, experiments, and implementation details are maintained privately unless deliberately released.
 
 ---
 
@@ -67,6 +126,8 @@ Publication of this repository does not grant any right, license, or permission 
 No trademark rights are granted by implication or otherwise.
 
 Speedlora™ is not represented here as a registered trademark unless and until an applicable trademark registration is obtained.
+
+See [`TRADEMARK.md`](./TRADEMARK.md).
 
 ---
 
@@ -89,9 +150,9 @@ See:
 
 ## Official repository
 
-This repository serves as the public development and brand-history repository for Speedlora™.
+This repository preserves the public identity and development history of Speedlora™.
 
-Brand assets, documentation, product concepts, and releases maintained here may be versioned over time as the Speedlora platform evolves.
+Brand assets, documentation, concepts, and releases may evolve over time while previous releases remain part of the historical record.
 
 ---
 
