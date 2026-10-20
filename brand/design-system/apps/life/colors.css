@@ -1,0 +1,76 @@
+/* SpeedLora Life theme palettes — unchanged color values from the approved Figma palettes.
+ * SoftLight = previous Ocean/Soft Contrast (light); default even before JS loads.
+ * SpeedLora = previous Balanced (blue/violet).
+ * The retired third palette is not included. */
+:root,
+:root[data-sl-theme="softlight"] {
+  color-scheme: light;
+  --sl-color-bg: #f5f8ff;
+  --sl-color-bg-2: #eaf0fc;
+  --sl-color-sidebar: #ffffff;
+  --sl-color-topbar: rgba(255,255,255,.94);
+  --sl-color-surface-1: #ffffff;
+  --sl-color-surface-2: #edf3fe;
+  --sl-color-surface-3: #e3ecfc;
+  --sl-color-surface-hover: #e1ecff;
+  --sl-color-surface-selected: #d9e8ff;
+  --sl-color-border: #d7e3f5;
+  --sl-color-border-strong: #a8c0e3;
+  --sl-color-cyan: #087d9c;
+  --sl-color-blue: #215acb;
+  --sl-color-violet: #7547cc;
+  --sl-color-magenta: #9652a8;
+  --sl-color-brand-soft: rgba(37,99,235,.10);
+  --sl-color-violet-soft: rgba(117,71,204,.09);
+  --sl-color-success: #137b62;
+  --sl-color-warning: #986400;
+  --sl-color-danger: #b62940;
+  --sl-color-success-soft: rgba(19,123,98,.09);
+  --sl-color-warning-soft: rgba(152,100,0,.10);
+  --sl-color-danger-soft: rgba(182,41,64,.09);
+  --sl-text-primary: #0c1f47;
+  --sl-text-secondary: #405777;
+  --sl-text-muted: #536988;
+  --sl-color-shadow: rgba(42,70,124,.10);
+  --sl-color-nav-active: rgba(37,99,235,.10);
+  --sl-color-nav-active-end: rgba(117,71,204,.06);
+  --sl-color-focus-ring: #215acb;
+  --sl-color-action-text: #ffffff;
+  --sl-color-accent-neon: #c52e9c;
+}
+
+:root[data-sl-theme="speedlora"] {
+  color-scheme: dark;
+  --sl-color-bg: #081128;
+  --sl-color-bg-2: #0a1531;
+  --sl-color-sidebar: #09132b;
+  --sl-color-topbar: rgba(8,17,38,.94);
+  --sl-color-surface-1: #111e40;
+  --sl-color-surface-2: #192c50;
+  --sl-color-surface-3: #1d315b;
+  --sl-color-surface-hover: #223864;
+  --sl-color-surface-selected: #1c3d73;
+  --sl-color-border: #294168;
+  --sl-color-border-strong: #3e5c89;
+  --sl-color-cyan: #23d9f5;
+  --sl-color-blue: #1a62f1;
+  --sl-color-violet: #9261ff;
+  --sl-color-magenta: #bb6dff;
+  --sl-color-brand-soft: rgba(52,120,255,.16);
+  --sl-color-violet-soft: rgba(146,97,255,.14);
+  --sl-color-success: #50d890;
+  --sl-color-warning: #f2c15a;
+  --sl-color-danger: #ff737d;
+  --sl-color-success-soft: rgba(80,216,144,.12);
+  --sl-color-warning-soft: rgba(242,193,90,.13);
+  --sl-color-danger-soft: rgba(255,115,125,.12);
+  --sl-text-primary: #f4f7ff;
+  --sl-text-secondary: #bcccf1;
+  --sl-text-muted: #96a9d9;
+  --sl-color-shadow: rgba(0,0,0,.28);
+  --sl-color-nav-active: rgba(52,120,255,.25);
+  --sl-color-nav-active-end: rgba(146,97,255,.16);
+  --sl-color-focus-ring: #89d9ff;
+  --sl-color-action-text: #ffffff;
+  --sl-color-accent-neon: #ff66de;
+}

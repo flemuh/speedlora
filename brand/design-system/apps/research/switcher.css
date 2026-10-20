@@ -1,0 +1,30 @@
+/* Shared runtime component styling. Theme colors always come from colors.css. */
+.sl-theme-picker {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+  white-space: nowrap;
+  color: var(--sl-text-secondary);
+  font-size: 12px;
+  font-weight: 650;
+}
+.sl-theme-picker select {
+  appearance: auto;
+  min-width: 115px;
+  max-width: 150px;
+  width: auto;
+  padding: 8px 10px;
+  color: var(--sl-text-primary);
+  background: var(--sl-color-surface-2);
+  border: 1px solid var(--sl-color-border-strong);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.sl-theme-picker select:hover { border-color: var(--sl-color-cyan); }
+.sl-theme-picker select:focus-visible { outline: 2px solid var(--sl-color-cyan); outline-offset: 2px; }
+@media (max-width: 720px) {
+  .sl-theme-picker { gap: 5px; }
+  .sl-theme-picker-label { display: none; }
+  .sl-theme-picker select { min-width: 105px; padding: 8px 5px; }
+}

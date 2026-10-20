@@ -1,0 +1,15 @@
+import { strict as a } from 'node:assert';
+import { readFileSync, existsSync } from 'node:fs';
+import { dirname, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
+const file = p => resolve(root, p);
+const mascot = readFileSync(file('brand/speedlora-mascot.png'));
+const bg = readFileSync(file('brand/assets/backgrounds/research-hero-cosmic.webp'));
+a.equal(mascot.subarray(0, 8).toString('hex'), '89504e470d0a1a0a');
+a.equal(bg.toString('ascii', 0, 4), 'RIFF');
+a.equal(bg.toString('ascii', 8, 12), 'WEBP');
+a.ok(existsSync(file('brand/assets/characters/archive/speedlora-female-ambassador-v5.png')));
+a.ok(existsSync(file('brand/assets/mascot/legacy/speedlora-mascot-v5.png')));
+a.ok(existsSync(file('brand/BRAND_ASSET_MANIFEST.md')));
+console.log('SpeedLora standalone brand source: PASS');
