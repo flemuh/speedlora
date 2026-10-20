@@ -1,19 +1,19 @@
-# Speedlora™ Brand Assets
+# SpeedLora™ Brand Assets
 
-This directory contains the official public brand assets for Speedlora™.
+This directory contains the official public brand assets for SpeedLora™.
 
-Speedlora is an independent AI-focused project combining proprietary product development with technical research, experimentation, evaluation, and engineering.
+SpeedLora is an independent AI-focused engineering and research ecosystem combining proprietary products, public technical work, experimentation, evaluation, and evidence-driven learning.
 
 The visual identity is built around themes such as:
 
-- artificial intelligence
-- research
-- experimentation
-- discovery
-- learning
-- evaluation
-- engineering
-- progress
+- artificial intelligence;
+- research;
+- experimentation;
+- discovery;
+- learning;
+- evaluation;
+- engineering;
+- progress.
 
 ---
 
@@ -23,109 +23,61 @@ The visual identity is built around themes such as:
 
 `speedlora-logo.svg`
 
-The primary Speedlora logo and wordmark.
+The primary SpeedLora logo and wordmark. It is the neutral umbrella identifier for the whole ecosystem and is intended for headers, footers and product identity without a product-specific tagline.
 
-This asset defines the core visual identity of the Speedlora brand.
+### Active mascot — Neon Robot with Tablet (Brand v6)
 
----
+`speedlora-mascot.png` is the current canonical web-optimized **transparent PNG** mascot: a friendly white-and-blue robot with blue neon accents, star-shaped ear displays, the SpeedLora emblem, and a tablet. It replaces the former mascot as the active product character.
 
-### Hero
+The exact submitted original image is preserved at `assets/mascot/current/mascot-neon-tablet-source.png`. The root PNG is a display derivative with transparent margins trimmed; the artwork itself has not been redesigned. Life references the display PNG on its Today hero. Research references it on the research index, while the Research home background already includes the same robot — **do not overlay a second robot on the homepage hero**.
 
-`speedlora-hero.png`
+### Research home cosmic background — Brand v6
 
-The official Speedlora Research hero concept.
+`assets/backgrounds/research-hero-cosmic.webp` is the web-optimized active Research hero background; `assets/backgrounds/research-hero-space-source.png` preserves the full supplied illustration. The composition leaves reading space on the left and shows the new robot, tablet and planet on the right. Research keeps a deployed copy at `apps/web/public/brand/research-hero-cosmic.webp`.
 
-The artwork represents the visual direction of Speedlora's independent research program and public research archive.
+### Archived identities (not active mascots)
 
-Its research categories include concepts such as:
+- `assets/mascot/legacy/speedlora-mascot-v5.png`: former canonical robot.
+- `assets/characters/archive/speedlora-female-ambassador-v5.png`: professional female character, preserved **only** in central brand archive. It must not be imported into active Life/Research pages or used as a mascot.
+- `assets/backgrounds/legacy/research-hero-cosmic-v5.webp`: former Research landing background.
 
-- Research Notes
-- Experiments
-- Benchmarks
-- Evaluations
-- Case Studies
-- Findings
+These assets are retained for history and controlled future brand reference, not as current interface artwork.
 
-The search interface shown in the artwork represents the concept of exploring **Speedlora's own published research archive**.
+### Current two-mode visual system
 
-It does not represent a universal research engine, external paper database, general-purpose chatbot, or commercial research SaaS.
+`design-system/apps/{life,research}/` holds the approved current tokens and runtime theme controllers for the two independent applications. They intentionally differ in some surface, status, focus and accessibility tokens; never replace them with one obsolete shared file.
 
-The hero should be interpreted as brand and interface concept artwork rather than a representation of current production functionality.
+### Asset roles
 
-Interfaces, example research entries, visualizations, and other UI elements shown in the artwork are illustrative.
+- **Logo / wordmark:** primary identifier; appropriate for headers, footers, navigation and product identity.
+- **Mascot:** friendly product/learning character; use selectively where a warmer brand presence helps the experience.
+- **Archived female ambassador:** preserved in the brand archive only; not used in current product interfaces.
 
-They should not be interpreted as verified product capabilities, operating scale, dataset size, user volume, performance metrics, or commercial service availability.
-
----
-
-### Character
-
-`speedlora-character.png`
-
-The official Speedlora character concept.
-
-The character represents the human-centered side of the Speedlora identity and themes such as:
-
-- research
-- artificial intelligence
-- experimentation
-- exploration
-- learning
-- engineering
-- discovery
-
-The character may appear across Speedlora brand, product, and research materials.
+These roles remain separate: **logo ≠ active mascot ≠ archived characters**. See `BRAND_ASSET_MANIFEST.md` for deployment copy checks.
 
 ---
 
 ## Research identity
 
-The current research-oriented brand direction is based on:
-
 > **Research at AI speed.**
 
-Speedlora's research program is intended to document and selectively publish technical work such as:
-
-- Research Notes
-- Experiments
-- Benchmarks
-- Evaluations
-- Case Studies
-- Findings
-
-The intended model is an independent research and engineering program where ideas can be studied, tested, measured, documented, and selectively published.
-
-It is not intended to imply that Speedlora operates a large scientific database, global research organization, universal paper-search platform, or commercial AI research service.
-
-A supporting principle used in the current visual direction is:
+Supporting principle:
 
 > **Test. Measure. Learn. Publish.**
 
-Another part of the current research identity is:
-
-> **Independent research, openly published.**
-
-This refers to the selective publication of research results and technical findings.
-
-It does not imply that production source code, internal datasets, proprietary infrastructure, or all research implementation is publicly available.
+Public research is selectively released. This does not imply that private product source code, the complete Master Plan, internal datasets, personal learning data, proprietary infrastructure, or all research implementation is public.
 
 ---
 
 ## Brand status
 
-These files represent the current public version of the Speedlora visual identity.
-
-Future versions may refine or expand the brand system while preserving the identity and historical record of previous releases.
-
-Earlier brand releases may contain exploratory concepts that no longer represent the current direction.
-
-Those releases remain preserved as part of the public brand history.
+These files represent the current public SpeedLora visual identity. Future revisions may refine the brand while Git history preserves earlier releases.
 
 ---
 
 ## Usage
 
-The Speedlora™ name, logo, symbol, character, visual identity, and associated brand assets are proprietary brand identifiers.
+The SpeedLora™ name, logo, symbol, mascot, visual identity, and associated brand assets are proprietary brand identifiers.
 
 Publication of these files does not grant permission to copy, modify, redistribute, sublicense, commercially exploit, or use these assets in connection with another product, service, company, website, application, or organization.
 
@@ -147,3 +99,7 @@ The primary public domain is **https://speedlora.com**.
 ---
 
 © 2026 Fernando Humel Procópio. All rights reserved.
+
+### Two selectable themes (current)
+
+**SoftLight** (default light) and **SpeedLora** (dark blue/violet) are the two active themes in Life and Research. Product-specific, approved theme snapshots are versioned under `design-system/apps/life/` and `design-system/apps/research/`. The former three-theme common palette is retired and **must not** overwrite the current CSS. See [`design-system/SCHEMES.md`](design-system/SCHEMES.md).

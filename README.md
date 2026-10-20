@@ -1,159 +1,41 @@
-# Speedlora™
+# SpeedLora — Brand and shared identity
 
-<p align="center">
-  <img src="./brand/speedlora-logo.svg" alt="Speedlora" width="520">
-</p>
+**SpeedLora** is the umbrella for an engineering portfolio, personal operating tools and independent technical research. The professional story leads with **PHP/Laravel Backend and Full Stack (Vue.js/TypeScript)**; Python, AWS, coding-agent evaluation and research add technical depth. The brand does not imply that all prototypes are finished or that experiments have been independently validated.
 
-<p align="center">
-  <strong>Research at AI speed.</strong>
-</p>
+## Repositories and responsibility
 
-Speedlora™ is an independent AI-focused project building proprietary products and conducting technical research in areas such as learning, personal intelligence, AI evaluation, experimentation, and engineering.
+| Repository | Responsibility | Visibility |
+|---|---|---|
+| `speedlora` | Official identity, approved artwork, app-specific design tokens, brand source checks | Public |
+| `speedlora-research` | Public portfolio, approved case studies, research publications and private editing/admin | Public site; protected admin |
+| `speedlora-life` | Tasks, Routines, Courses, Projects, Gates, Today/Week, private planning | Private application/repo |
+| `speedlora-english` | Separate English-learning product under development; Life integration is future work | Independent; do not assume deployed |
 
-Selected research outputs may be published publicly as Research Notes, Experiments, Benchmarks, Evaluations, Case Studies, and Findings.
+The Research public site is associated with `https://speedlora.com`. The Life and Research projects are deployed independently and keep their own SQLite data, authentication and secrets. This repository is **not** an orchestrator and must not contain personal task YAML, customer data or server secrets.
 
-> **Project status:** Speedlora is currently in the concept, research, and prototyping stage. Visual interfaces and concepts shown in brand materials are illustrative and may not represent production functionality.
+## Current identity (15 October 2026)
 
-<p align="center">
-  <img src="./brand/speedlora-hero.png" alt="Speedlora — Research at AI speed">
-</p>
+- The canonical active logo and neon-robot mascot live under [`brand/`](brand/README.md). Historical mascot and character imagery stays in the archive, not in live pages.
+- Exactly **two** approved appearance choices: **SoftLight** (default light theme) and **SpeedLora** (blue-violet dark theme), stored per origin under `speedlora.colorScheme.v2`. Previous v1 preferences migrate locally.
+- Life and Research have **different, legitimate overrides**. The canonical, **app-specific snapshots** live under `brand/design-system/apps/{life,research}/`. Do not overwrite one app's theme with the other's palette.
+- Research Q7.11 includes a project-image carousel (3 s for multiple images, still image for single cover, arrows and zoom). This is product UI; no changes to the brand artwork are needed.
 
----
+## Safe verification and synchronization
 
-## Official websites
+In a folder containing sibling repositories `speedlora`, `speedlora-life` and `speedlora-research`:
 
-The following domains are official Speedlora properties:
+```bash
+node speedlora/scripts/check-brand-source.mjs
+node speedlora/scripts/sync-brand-assets.mjs --check
+node speedlora/scripts/sync-themes.mjs --check
+node speedlora/scripts/test-brand-assets.mjs
+node speedlora/scripts/test-themes.mjs
+```
 
-- https://speedlora.com
-- https://speedlora.app
-- https://speedlora.com.br
+Both `sync-themes.mjs` and `sync-brand-assets.mjs` are **check-only by default**. After visually and technically reviewing a snapshot diff, explicitly run `--apply --confirm-reviewed`. Never run the retired 3-theme synchronizer: it could replace newly approved palettes. Syncing assets is a local copy/check operation, **not a deployment**.
 
-**speedlora.com** is the primary public domain.
+For a standalone checkout of just `speedlora`, the GitHub Actions workflow checks canonical assets and source contracts; cross-repository parity requires the sibling projects checked out at matching revisions.
 
----
+The applications have their own tests, build and manual deployment gates. Pushing `speedlora` or an application repository does not prove its VPS site is running. Do not publish the experimental 10,002-simulation (~45%) benchmark as reproduced until code, seeds, warmup, environment and repeated results are publicly available.
 
-## Research
-
-Speedlora maintains an independent research program focused on studying, testing, evaluating, benchmarking, and documenting technical ideas.
-
-Research areas may include:
-
-- AI and LLM evaluation
-- Agent evaluation
-- Experimental systems
-- Benchmarks
-- Engineering investigations
-- Research methodologies
-- Learning systems
-- Applied artificial intelligence
-
-Public research may be published as:
-
-- Research Notes
-- Experiments
-- Benchmarks
-- Evaluations
-- Case Studies
-- Findings
-
-The goal is to create a clear technical record of what was tested, how it was evaluated, what failed, what worked, and what was learned.
-
-Speedlora Research is not intended to represent a universal research database, paper-search engine, general-purpose chatbot, or large-scale commercial research platform.
-
-Selected public research will be published through:
-
-**https://speedlora.com/research**
-
-Internal implementation, production source code, private experiments, datasets, infrastructure, and proprietary technical details remain private unless intentionally released.
-
----
-
-## Research philosophy
-
-> **Test. Measure. Learn. Publish.**
-
-Research should be grounded in experimentation, evidence, evaluation, and reproducible reasoning whenever possible.
-
-Public research is intended to communicate useful methodology, observations, and findings without making unsupported claims about scale, performance, or capability.
-
----
-
-## Brand identity
-
-The Speedlora visual identity includes its:
-
-- Speedlora™ name
-- logo and symbol
-- visual identity
-- color system
-- slogans and taglines
-- interface concepts
-- illustrations
-- character
-- associated brand assets
-
-Official public brand materials are maintained in the [`/brand`](./brand) directory.
-
----
-
-## Public and private boundaries
-
-This repository is the official **public brand-history repository** for Speedlora™.
-
-It may contain:
-
-- official brand assets
-- public brand documentation
-- official domain references
-- trademark notices
-- public releases
-- intentionally public project information
-
-It is **not** the production source-code repository for Speedlora products.
-
-Production code, internal architecture, private research work, evaluation infrastructure, datasets, experiments, and implementation details are maintained privately unless deliberately released.
-
----
-
-## Trademark notice
-
-**Speedlora™** is a brand created and used by **Fernando Humel Procópio**.
-
-The Speedlora name, logo, symbol, visual identity, slogans, characters, and associated brand assets are proprietary brand identifiers.
-
-Publication of this repository does not grant any right, license, or permission to use the Speedlora name, logo, visual identity, characters, or other brand assets in connection with any product, service, website, application, company, or organization.
-
-No trademark rights are granted by implication or otherwise.
-
-Speedlora™ is not represented here as a registered trademark unless and until an applicable trademark registration is obtained.
-
-See [`TRADEMARK.md`](./TRADEMARK.md).
-
----
-
-## Copyright and licensing
-
-Unless expressly stated otherwise:
-
-**© 2026 Fernando Humel Procópio. All rights reserved.**
-
-This repository is proprietary.
-
-No permission is granted to copy, modify, distribute, sublicense, commercially exploit, or create derivative works from the original source code, documentation, visual assets, branding, illustrations, characters, or other original materials contained in this repository without prior written permission.
-
-See:
-
-- [`LICENSE`](./LICENSE)
-- [`TRADEMARK.md`](./TRADEMARK.md)
-
----
-
-## Official repository
-
-This repository preserves the public identity and development history of Speedlora™.
-
-Brand assets, documentation, concepts, and releases may evolve over time while previous releases remain part of the historical record.
-
----
-
-**Speedlora™ — Research at AI speed.**
+See [`brand/DESIGN_IMPLEMENTATION.md`](brand/DESIGN_IMPLEMENTATION.md), [`brand/design-system/SCHEMES.md`](brand/design-system/SCHEMES.md), [`brand/BRAND_ASSET_MANIFEST.md`](brand/BRAND_ASSET_MANIFEST.md).
